@@ -1,0 +1,65 @@
+combobox/dropdowns - uses selectstatement command
+
+selectbyvalue
+selectbyindex
+selectbyname
+
+by(id)-mechanism to find the element by id
+
+write an xpath to fetch all the buttons in a page
+//input[@type='submit']
+
+-> httprequest can be created only on anchor tags since it has 'href'
+
+by- finds the first webelement using the given method
+
+implicitwait - specifies the maount of time the driver shoul wait if the element being searched is no timmediately present.
+
+Q- why does IE throw browser closed error during automation if the protected mode settings are not enabled?
+
+-->using cssSelector:
+
+incase of compound classname- use cssSelector
+compund classname - ex: text-center expand-email-form (having a space between two classnames)
+remove the space and place a dot.
+driver.FindElement(By.CssSelector(".text-center.expand-email-form")).Click();
+
+sendKeys - simulates typing text into the element.
+
+SelectElement - provides a convenient method for manipulating the selections of options in an html select element.
+
+
+Q - clicking on radio buttons and checkboxes having captcha?
+
+iWebdriver - defines the interface through which the user controls the browser.
+PNG - portable networks graphic
+Take the screenshot method and call it after every assertion statement.
+
+
+
+
+Q- difference between driver.Quit() and driver.Close()
+
+->static and dynamic wait
+
+WebdriverWait class -
+
+wait.until takes a boolean parameter
+
+Javascript:
+
+IjavascriptExecutor - executes the document object of javascript and waits till the ajax components are loaded
+pop-ups are handled by javascript
+alert.accept
+alert.dismiss
+
+pop-ups- generated via windows, not handled by selenium- third party tool is required
+
+WebdriverWait - provides the ability to wait for an arbitrary condition during test execution
+
+wait.until -> repeatedly applies this instances input value to the given function until one of the following occurs:
+the function returns neither null nor false
+the function throws an exception that is not in the list of ignored exception
+the timeout expires
+
+Always use the explicitwait condition after the assert statement
